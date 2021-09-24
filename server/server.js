@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({
 //globals 
 
 const port = 5000;
-let calculatedNumbers = [];
 
 //spin up server
 
@@ -23,3 +22,7 @@ app.listen(port, ()=>{
 })
 
 //routes 
+
+app.get( '/', ( req, res ) =>{
+    console.log( '/ GET git' ); 
+})
